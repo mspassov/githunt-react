@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container{
+    width: 1280px;
+    max-width: 1280px;
+}
+
+.nav-content{
+    color: white;
+}
+
+.nav-links{
+    color: white;
+}
+
+.footer-text{
+    color: white;
+}
