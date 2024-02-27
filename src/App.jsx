@@ -8,6 +8,7 @@ import NotFoundPage from "./components/layouts/NotFoundPage";
 import Navbar from "./components/layouts/Navbar";
 import Footer from "./components/layouts/Footer";
 import Alert from "./components/Alert";
+import UserPage from "./components/layouts/UserPage";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<AboutPage />} />
+                <Route path="/user/:login" element={<UserPage />} />
                 <Route path="/*" element={<NotFoundPage />} />
               </Routes>
             </main>

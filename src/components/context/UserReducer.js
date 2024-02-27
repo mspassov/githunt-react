@@ -11,6 +11,18 @@ const userReducer = (state, action) =>{
                 usersList: action.payload,
                 isLoading: false
             }
+        case "GET_TARGET_USER":
+            return{
+                ...state,
+                targetUser: action.payload,
+                isLoading: false
+            }
+        case "GET_TARGET_REPOS":
+            return{
+                ...state,
+                targetRepos: action.payload,
+                isLoading: false
+            }
         case "SEARCH_USERS":
             return{
                 ...state,
